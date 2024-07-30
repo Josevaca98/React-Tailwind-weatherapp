@@ -58,7 +58,7 @@ export default function App() {
       .then((res) => res.json())
       .then((data) => {
         setApiData(null);
-        if (data.cod == 404 || data.cod == 400) {
+        if (data.cod === 404 || data.cod === 400) {
           // Array of objects
           setshowWeather([
             {
